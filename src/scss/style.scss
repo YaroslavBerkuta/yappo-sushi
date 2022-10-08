@@ -716,3 +716,16 @@ marquee {
     text-transform: uppercase;
   }
 }
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  margin-right: 45px;
+  li{
+    &:not(:last-child){
+      margin-right: 20px;
+    }
+  }
+}
+
+@import "./mobil.scss";

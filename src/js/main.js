@@ -3,7 +3,6 @@ import Swiper, { Mousewheel, Pagination } from "swiper/core";
 import "swiper/css/bundle";
 flsFunctions.isWebp();
 
-
 Swiper.use([Mousewheel, Pagination]);
 const swiper = new Swiper(".slider", {
   // on: {
@@ -22,4 +21,22 @@ const swiper = new Swiper(".slider", {
   },
   mousewheel: true,
   slidesPerView: 1,
+  breakpoints: {
+    768: {
+      pagination: {
+        type: "none",
+      },
+    },
+  },
 });
+const footetLogo = document.querySelector(".footer__logo");
+const footerSocial = document.querySelector(".footer__social")
+const headerLogo = document.querySelector(".header__logo")
+if (window.innerWidth <= 500) {
+  footetLogo.remove();
+  document.querySelector(".footer__top").appendChild(footetLogo)
+  headerLogo.remove();
+  document.querySelector(".header__top").prepend(headerLogo)
+  footerSocial.remove();
+  document.querySelector(".footer__top").prepend(footerSocial)
+}
