@@ -179,6 +179,7 @@ body {
   display: none;
 }
 .slider {
+  z-index: 0 !important;
   .swiper-pagination {
     top: 50%;
     left: 1% !important;
@@ -721,11 +722,189 @@ marquee {
   display: flex;
   align-items: center;
   margin-right: 45px;
-  li{
-    &:not(:last-child){
+  li {
+    &:not(:last-child) {
       margin-right: 20px;
     }
   }
 }
-
+.cart__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(18, 38, 170, 0.1);
+  backdrop-filter: blur(2.5px);
+  display: none;
+}
+.cart__wrapper {
+  &.active {
+    display: block;
+  }
+}
+.cart__item {
+  background: #ffffff;
+  border: 1px solid #1226aa;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 60px;
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+  }
+}
+.cart__img {
+  border: 1px solid #1226aa;
+  padding: 40px;
+}
+.cart__top {
+  display: flex;
+}
+.cart__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 55px;
+}
+.cart__info {
+  margin-left: 30px;
+}
+.cart__title {
+  max-width: 300px;
+  h4 {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 35px;
+    color: #1226aa;
+  }
+}
+.cart__detail {
+  margin-top: 23px;
+  span {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1226aa;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    li {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: #1226aa;
+    }
+  }
+}
+.cart__preview {
+  position: absolute;
+  top: 123px;
+  right: 76px;
+  height: 595px;
+  width: 480px;
+  z-index: 999;
+  background: #fff;
+  padding: 32px;
+  display: none;
+  &.active {
+    display: block;
+  }
+  .btn {
+    width: 100%;
+  }
+  h3 {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+    color: #1226aa;
+    border-bottom: 1px solid #1226aa;
+    padding-bottom: 5px;
+  }
+}
+.cart__preview-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  button {
+    top: 0;
+    right: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    position: absolute;
+    cursor: pointer;
+  }
+}
+.cart__preview-flex {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  overflow: auto;
+  max-height: 70%;
+  .cart__img {
+    width: 160px;
+    height: 128px;
+    padding: 14px;
+  }
+  .cart__detail {
+    margin-top: 0;
+    margin-left: 30px;
+    h2 {
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 23px;
+      color: #1226aa;
+    }
+    .product__cart {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 20px;
+      ul {
+        flex-direction: column;
+        align-items: flex-start;
+        li:last-child {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+.cart__preview-summery {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  span {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #1226aa;
+  }
+  p {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: right;
+    color: #1226aa;
+  }
+}
 @import "./mobil.scss";
