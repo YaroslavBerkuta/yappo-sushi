@@ -1016,6 +1016,116 @@ marquee span {
   color: #1226aa;
 }
 
+.account__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+  border-bottom: 1px solid #1226aa;
+}
+
+.account__menu li {
+  max-width: 30%;
+  flex: 0 0 100%;
+  padding-bottom: 20px;
+}
+
+.account__menu li a {
+  font-family: "Press Start 2P";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #1226aa;
+}
+
+.account__menu li.active {
+  border-bottom: 5px solid #ff671d;
+}
+
+.account__menu li.active a {
+  color: #ff671d;
+}
+
+.profile__detail {
+  margin-top: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile__detail label {
+  max-width: 30%;
+  flex: 0 0 100%;
+  border-bottom: 1px solid #1226aa;
+  padding-bottom: 10px;
+}
+
+.profile__detail label p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: "bold";
+  font-size: 26px;
+  line-height: 33px;
+  color: #1226aa;
+  margin-bottom: 28px;
+}
+
+.profile__detail label input {
+  border: none;
+  outline: none;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #1226aa;
+}
+
+.profile__detail label input::-moz-placeholder {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #b3bcf3;
+}
+
+.profile__detail label input:-ms-input-placeholder {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #b3bcf3;
+}
+
+.profile__detail label input::placeholder {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #b3bcf3;
+}
+
+.profile__detail label input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.profile__delete {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #1226aa;
+  display: block;
+  margin-top: 100px;
+}
+
 @media (max-width: 1440px) {
   .container {
     max-width: 1320px;

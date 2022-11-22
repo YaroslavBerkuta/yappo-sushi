@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ "title": "Account" })
+  <body>
+    @@include('html/header.html')
+    <main>
+      <section class="breadcrumb">
+        <div class="container">
+          <ul>
+            <li><a href="">ГОЛОВНА</a></li>
+            <li><a href="">Особистий кабінет</a></li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <ul class="account__menu">
+            <li class="active">
+              <a href="./profile.html">профіль</a>
+            </li>
+            <li>
+              <a href="./bonus.html">бонуси</a>
+            </li>
+            <li>
+              <a>замовлення</a>
+            </li>
+          </ul>
+          <div class="profile__detail">
+            <label>
+              <p>ІМʼЯ</p>
+              <input type="text" value="Анастасія" />
+            </label>
+            <label>
+              <p>НОМЕР ТЕЛЕФОНУ</p>
+              <input type="tel" value="+3 80 (98) 123 45 67" />
+            </label>
+            <label>
+              <p>ДЕНЬ НАРОДЖЕННЯ</p>
+              <input type="date" />
+            </label>
+          </div>
+          <a href="" class="profile__delete"> ВИДАЛИТИ мій профіль </a>
+        </div>
+      </section>
+    </main>
+    @@include('html/footer.html')
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

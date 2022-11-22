@@ -5,18 +5,7 @@ flsFunctions.isWebp();
 
 Swiper.use([Mousewheel, Pagination]);
 const swiper = new Swiper(".slider", {
-  pagination: {
-    el: ".swiper-pagination",
-    type: "bullets",
-  },
   slidesPerView: 1,
-  breakpoints: {
-    768: {
-      pagination: {
-        type: "none",
-      },
-    },
-  },
 });
 const footetLogo = document.querySelector(".footer__logo");
 const footerSocial = document.querySelector(".footer__social");
@@ -42,4 +31,4 @@ document.querySelector(".cart__item .close").addEventListener("click", () => {
 });
 document.querySelector(".cart").addEventListener("click", () => {
   document.querySelector(".cart__preview").classList.toggle("active");
-})
+});
