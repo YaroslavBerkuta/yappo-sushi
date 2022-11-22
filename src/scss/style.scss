@@ -971,9 +971,6 @@ marquee {
         line-height: 25px;
         color: #b3bcf3;
       }
-      &::-webkit-calendar-picker-indicator {
-        display: none;
-      }
     }
   }
 }
@@ -988,5 +985,105 @@ marquee {
   display: block;
   margin-top: 100px;
 }
+.bonus__flex {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  p {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #1226aa;
+  }
+}
+.bonus__item {
+  margin-bottom: 60px;
+  margin-top: 15px;
+  p {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1226aa;
+  }
+  span {
+    font-family: "Press Start 2P";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #1226aa;
+    display: block;
+    margin-top: 30px;
+  }
+}
+.order__item {
+  margin-top: 50px;
+}
+.order__header {
+  border-bottom: 1px solid #1226aa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0 15px 15px 15px;
 
+  p {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1226aa;
+  }
+}
+.order__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  border: 1px solid #1226aa;
+  margin-top: 20px;
+}
+.order__date {
+  display: flex;
+  align-items: center;
+  p {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1226aa;
+    margin-right: 15px;
+  }
+}
+.order__bonus {
+  p {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1226aa;
+    margin-right: 15px;
+  }
+}
+.order__price {
+  p {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1226aa;
+    margin-right: 15px;
+  }
+}
 @import "./mobil.scss";

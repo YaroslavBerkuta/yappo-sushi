@@ -16,7 +16,7 @@
   }
 }
 @media (max-width: 1200px) {
-  .footer__social{
+  .footer__social {
     display: none;
   }
   .header__category ul li a p {
@@ -48,7 +48,56 @@
     margin-right: 60px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .container {
+    max-width: 95%;
+  }
+  .cart__preview {
+    right: 0;
+  }
+  .header__info ul {
+    margin-left: 0;
+  }
+  .about__item {
+    max-width: 30%;
+  }
+  .about__detail h4 {
+    font-size: 30px;
+  }
+  .header__info p {
+    display: none;
+  }
+  .account__menu {
+    overflow: auto;
+  }
+  .account__menu li {
+    margin-right: 100px;
+  }
+}
+@media (max-width: 990px) {
+  .cart__item {
+    width: 90%;
+  }
+  .cart__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cart__title h4 {
+    font-size: 25px;
+  }
+  .cart__preview {
+    top: 113px;
+  }
+  .about__item {
+    max-width: 100%;
+  }
+  .about__detail p {
+    font-size: 20px;
+  }
+  .about__detail h4 {
+    font-size: 40px;
+  }
   .container {
     max-width: 90%;
   }
@@ -149,6 +198,24 @@
   .not-found__description p {
     font-size: 35px;
   }
+  .account__menu li a {
+    font-size: 28px;
+  }
+  .account__menu li {
+    margin-right: 55px;
+  }
+  .bonus__item {
+    margin-top: 40px;
+  }
+  .profile__detail {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .profile__detail label {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 @media (max-width: 500px) {
   .header__category ul li {
@@ -195,13 +262,38 @@
   .not-found__description p {
     font-size: 25px;
   }
-  .footer__social{
+  .footer__social {
     display: flex;
     margin-right: 0;
     margin-top: 20px;
   }
+  .cart__preview {
+    max-width: 100%;
+    top: 176px;
+  }
+  .cart__bottom {
+    display: none;
+  }
+  .cart__top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cart__info {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .account__menu li {
+    max-width: 100%;
+    flex: none;
+  }
+  .profile__delete {
+    margin-top: 50px;
+  }
+  .order__info {
+    padding: 30px 15px;
+  }
 }
-@media (max-width: 400px) {
+@media (max-width: 440px) {
   .container {
     max-width: 100%;
   }
@@ -218,16 +310,16 @@
     line-height: 17px;
     font-size: 18px;
   }
-  .btn{
+  .btn {
     font-size: 11px;
   }
-  .about__detail h4{
+  .about__detail h4 {
     font-size: 35px;
   }
-  .section__title h2{
+  .section__title h2 {
     font-size: 40px;
   }
-  .news__hover h4{
+  .news__hover h4 {
     margin-bottom: 15px;
   }
 }

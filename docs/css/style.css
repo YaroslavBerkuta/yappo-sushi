@@ -1110,10 +1110,6 @@ marquee span {
   color: #b3bcf3;
 }
 
-.profile__detail label input::-webkit-calendar-picker-indicator {
-  display: none;
-}
-
 .profile__delete {
   font-family: "Mulish";
   font-style: normal;
@@ -1124,6 +1120,115 @@ marquee span {
   color: #1226aa;
   display: block;
   margin-top: 100px;
+}
+
+.bonus__flex {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.bonus__flex p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #1226aa;
+}
+
+.bonus__item {
+  margin-bottom: 60px;
+  margin-top: 15px;
+}
+
+.bonus__item p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1226aa;
+}
+
+.bonus__item span {
+  font-family: "Press Start 2P";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 80px;
+  text-align: center;
+  color: #1226aa;
+  display: block;
+  margin-top: 30px;
+}
+
+.order__item {
+  margin-top: 50px;
+}
+
+.order__header {
+  border-bottom: 1px solid #1226aa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px 15px 15px;
+}
+
+.order__header p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+  color: #1226aa;
+}
+
+.order__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  border: 1px solid #1226aa;
+  margin-top: 20px;
+}
+
+.order__date {
+  display: flex;
+  align-items: center;
+}
+
+.order__date p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1226aa;
+  margin-right: 15px;
+}
+
+.order__bonus p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1226aa;
+  margin-right: 15px;
+}
+
+.order__price p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1226aa;
+  margin-right: 15px;
 }
 
 @media (max-width: 1440px) {
@@ -1191,7 +1296,71 @@ marquee span {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .container {
+    max-width: 95%;
+  }
+
+  .cart__preview {
+    right: 0;
+  }
+
+  .header__info ul {
+    margin-left: 0;
+  }
+
+  .about__item {
+    max-width: 30%;
+  }
+
+  .about__detail h4 {
+    font-size: 30px;
+  }
+
+  .header__info p {
+    display: none;
+  }
+
+  .account__menu {
+    overflow: auto;
+  }
+
+  .account__menu li {
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 990px) {
+  .cart__item {
+    width: 90%;
+  }
+
+  .cart__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cart__title h4 {
+    font-size: 25px;
+  }
+
+  .cart__preview {
+    top: 113px;
+  }
+
+  .about__item {
+    max-width: 100%;
+  }
+
+  .about__detail p {
+    font-size: 20px;
+  }
+
+  .about__detail h4 {
+    font-size: 40px;
+  }
+
   .container {
     max-width: 90%;
   }
@@ -1320,6 +1489,29 @@ marquee span {
   .not-found__description p {
     font-size: 35px;
   }
+
+  .account__menu li a {
+    font-size: 28px;
+  }
+
+  .account__menu li {
+    margin-right: 55px;
+  }
+
+  .bonus__item {
+    margin-top: 40px;
+  }
+
+  .profile__detail {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile__detail label {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1386,9 +1578,41 @@ marquee span {
     margin-right: 0;
     margin-top: 20px;
   }
+
+  .cart__preview {
+    max-width: 100%;
+    top: 176px;
+  }
+
+  .cart__bottom {
+    display: none;
+  }
+
+  .cart__top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart__info {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .account__menu li {
+    max-width: 100%;
+    flex: none;
+  }
+
+  .profile__delete {
+    margin-top: 50px;
+  }
+
+  .order__info {
+    padding: 30px 15px;
+  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 440px) {
   .container {
     max-width: 100%;
   }
